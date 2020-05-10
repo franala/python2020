@@ -3,7 +3,6 @@ import reversegam
 import tictactoeModificado
 import PySimpleGUI as sg
 import json
-from datetime import datetime
 
 def main(args):
 
