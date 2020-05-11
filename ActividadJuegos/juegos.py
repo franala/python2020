@@ -4,7 +4,7 @@ import tictactoeModificado
 import PySimpleGUI as sg
 import json
 
-def guardarPuntos(nombre,juego):
+def guardarDatos(nombre,juego):
 	if (juego != 'Salir'):
 		with open("archivoJugadores.txt","a") as archivo:
 			dic = {'Jugador': nombre, 'Juego:': juego}
@@ -26,7 +26,7 @@ def main(args):
 
 		event, values = window.Read()
 		window.Close()
-		guardarPuntos(values[0],event)
+		guardarDatos(values[0],event)
 
 		if event == 'Ahorcado':
 			hangman.main()
