@@ -12,7 +12,7 @@ def main(args):
 		layout = [
 			[sg.Text('Nombre de jugador:'), sg.InputText()],
 			[sg.Text('Elegí con qué juego querés jugar:')],
-			[sg.Button('Ahorcado'), sg.Button('Ta-Te-Ti')],[sg.Button('Otello')],
+			[sg.Button('Ahorcado'), sg.Button('Ta-Te-Ti'),sg.Button('Otello')],
 			[sg.Button('Salir')]
 			]
 
