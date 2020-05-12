@@ -5,7 +5,7 @@ import PySimpleGUI as sg
 import json
 
 def guardarDatos(nombre,juego):
-	if (juego != 'Salir'):
+	if (juego != 'Salir' and juego is not None):
 		with open("archivoJugadores.txt","a") as archivo:
 			dic = {'Jugador': nombre, 'Juego:': juego}
 			json.dump(dic,archivo, indent=4)
